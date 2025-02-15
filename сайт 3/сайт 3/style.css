@@ -1,0 +1,141 @@
+/* Общие стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Шапка */
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Кнопки */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2575fc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: #6a11cb;
+    transform: translateY(-3px);
+}
+
+/* Секции */
+section {
+    margin: 40px 0;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.photo-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 800px;
+    width: 100%;
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo-description {
+    padding: 20px;
+    text-align: center;
+}
+
+.photo-description h2 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.photo-description p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Подвал */
+footer {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .photo-description h2 {
+        font-size: 1.5rem;
+    }
+
+    .photo-description p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
